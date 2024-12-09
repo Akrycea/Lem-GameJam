@@ -17,18 +17,13 @@ public class MaskSlider : MonoBehaviour
 
     void OnEnable()
     {
-        sliderTimer = 10;
+        maskOn = true;
+
+        sliderTimer = 7;
         timeSlider.maxValue = sliderTimer;
         timeSlider.value = sliderTimer;
 
-        maskOn = true;
-
         StartTimer();
-    }
-
-    void OnDisable()
-    {
-        maskOn = false;
     }
 
     public void StartTimer()

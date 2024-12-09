@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerBehaviour : MonoBehaviour
 {
     [SerializeField] MaskSlider script;
     public GameObject maskSlider;
+    public TMP_Text maskUI;
     public GameObject key;
     public bool canPickUp = false;
+    public bool canTakeOff = false;
 
     void Start()
     {
@@ -20,11 +24,12 @@ public class PlayerBehaviour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == false)
         {
             maskSlider.SetActive(true);
+            canTakeOff = true;
         }
 
-        else if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == true)
+        else if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == true && canTakeOff == true)
         {
-            maskSlider.SetActive(false);
+            StartTimer();
         }
 
         if (Input.GetKeyDown(KeyCode.E) && canPickUp == true)
@@ -48,5 +53,22 @@ public class PlayerBehaviour : MonoBehaviour
         {
             canPickUp = false;
         }
+    }
+
+    public void StartTimer()
+    {
+        StartCoroutine(MaskColor());
+    }
+
+    IEnumerator MaskColor()
+    {
+        canTakeOff = false;
+        maskSlider.SetActive(false);
+        maskUI.faceColor = new Color32(255, 255, 255, 75);
+
+        yield return new WaitForSeconds(3);
+
+        script.maskOn = false;
+        maskUI.faceColor = new Color32(255, 255, 255, 255);
     }
 }
