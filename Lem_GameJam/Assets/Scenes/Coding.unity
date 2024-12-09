@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 397423684}
   - component: {fileID: 397423683}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Fog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1284,8 +1284,8 @@ SceneRoots:
   - {fileID: 479669599}
   - {fileID: 1000630068}
   - {fileID: 803365884}
+  - {fileID: 397423684}
   - {fileID: 863882698}
   - {fileID: 608804849}
   - {fileID: 1297070023}
   - {fileID: 1599885619}
-  - {fileID: 397423684}
