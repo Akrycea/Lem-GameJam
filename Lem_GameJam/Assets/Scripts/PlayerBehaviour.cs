@@ -12,6 +12,7 @@ public class PlayerBehaviour : MonoBehaviour
     public GameObject key;
     public bool canPickUp = false;
     public bool canTakeOff = false;
+    public bool hasKey = false;
 
     void Start()
     {
@@ -35,6 +36,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && canPickUp == true)
         {
             key.SetActive(false);
+            hasKey = true;
             Debug.Log("Key acquired");
         }
     }
