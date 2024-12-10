@@ -7,6 +7,7 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] MaskSlider script;
 
+    Animator animator;
     public Transform player;
     NavMeshAgent agent;
     public LayerMask Ground, Player;
@@ -22,6 +23,7 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -50,6 +52,7 @@ public class EnemyAI : MonoBehaviour
 
     void UpdateDestination()
     {
+        animator.SetBool("isWalking", true);
         target = waypoints[waypointIndex].position;
         agent.SetDestination(target);
     }
@@ -85,5 +88,7 @@ public class EnemyAI : MonoBehaviour
     //             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90)); // Adjust the angle if needed
     //         }
     // }
+
+
 }
 
