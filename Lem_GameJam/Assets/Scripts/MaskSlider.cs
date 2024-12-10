@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class MaskSlider : MonoBehaviour
 {
+    public GameObject youDied;
     public Slider timeSlider;
     public float sliderTimer;
     public bool stopTimer = false;
@@ -13,6 +14,7 @@ public class MaskSlider : MonoBehaviour
     void Start()
     {
         timeSlider = GetComponent<Slider>();
+        youDied.SetActive(false);
     }
 
     void OnEnable()
@@ -42,8 +44,12 @@ public class MaskSlider : MonoBehaviour
             {
                 stopTimer = true;
 
-                Debug.Log("You died");
-                //DEATH SCREEN
+                youDied.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    Application.Quit();
+                }
             }
 
             if (stopTimer == false)

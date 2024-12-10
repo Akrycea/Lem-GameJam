@@ -9,17 +9,22 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] MaskSlider script;
     public GameObject maskSlider;
     public GameObject redFilter;
+    public GameObject youDied;
+    public GameObject youWon;
     public TMP_Text maskUI;
     public GameObject key;
     public bool canPickUp = false;
     public bool canTakeOff = false;
     public bool hasKey = false;
     public bool canOpen = false;
+    public bool isDead = false;
 
     void Start()
     {
         maskSlider.SetActive(false);
         redFilter.SetActive(false);
+        youDied.SetActive(false);
+        youWon.SetActive(false);
         script.maskOn = false; 
     }
 
@@ -46,7 +51,17 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && canOpen == true)
         {
-            Debug.Log("You won");
+            youWon.SetActive(true);
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && isDead == true)
+        {
+            Application.Quit();
         }
     }
 
@@ -59,7 +74,8 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (other.tag == "Enemy" && script.maskOn == false)
         {
-            Debug.Log("You died");
+            youDied.SetActive(true);
+            isDead = true;
         }
 
         if (other.tag == "Door" && hasKey == true)
