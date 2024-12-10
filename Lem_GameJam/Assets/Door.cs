@@ -14,6 +14,7 @@ public class Door : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && canEscape == true)
         {
             spriteRenderer.sprite = openSprite;
+            SoundManager.Instance.PlaySound3D("drzwi pancerne", transform.position);
         }
     }
 
