@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eec4cf1c023d29b40a9f8dd19271448d
+guid: 0dd17890bc5c4be4e9940aebd125b900
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run_cycle_doctor__0
+      name: left_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4c81d22d4c94af43b1b04fe66622c06
-      internalID: 1327524794
+      spriteID: e47401513a1fb9841a039c28f27b2c59
+      internalID: 1017815455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_cycle_doctor__1
+      name: left_1
       rect:
         serializedVersion: 2
         x: 64
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08ef434ed502456419f7f8028c184d44
-      internalID: -168827200
+      spriteID: 194dcac42be09584b9c7e04d031c5884
+      internalID: -1757059480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_cycle_doctor__2
+      name: left_2
       rect:
         serializedVersion: 2
         x: 128
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdc249045749f63459959ddc8b70dedd
-      internalID: 11833139
+      spriteID: 8262a957053d76549bd0dbcdc339e874
+      internalID: -939509135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_cycle_doctor__3
+      name: left_3
       rect:
         serializedVersion: 2
         x: 192
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 893aecdda4af408418a2d3f8405a4dcb
-      internalID: 561303243
+      spriteID: 882463fc3e51b384c9d4e8a3cd772fa6
+      internalID: 1369314603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_cycle_doctor__4
+      name: left_4
       rect:
         serializedVersion: 2
         x: 256
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b770b16709773d047aa5e1c68c0676ea
-      internalID: -532021828
+      spriteID: 0cc1e9e2e5c98db40bb77b65b905e3fc
+      internalID: -1245534299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_cycle_doctor__5
+      name: left_5
       rect:
         serializedVersion: 2
         x: 320
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 457fad48cefb4504c89d6da49857779c
-      internalID: -1136884547
+      spriteID: e6a9f10293119e84884127c2e5cfc928
+      internalID: 782234673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_cycle_doctor__6
+      name: left_6
       rect:
         serializedVersion: 2
         x: 384
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a37184f1783972459049e3df4130358
-      internalID: 1367352642
+      spriteID: 91b1a8bad2aa82643aefdffb111aa5a7
+      internalID: -965940994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_cycle_doctor__7
+      name: left_7
       rect:
         serializedVersion: 2
         x: 448
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5246a0713f265854bbef6a7216aaef73
-      internalID: -1012307588
+      spriteID: cfbeb5c1ddfa5304d856b1b9bfadcde0
+      internalID: 670772587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_cycle_doctor__8
+      name: left_8
       rect:
         serializedVersion: 2
         x: 0
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4bacbfeb7f227f43826684d4d7aa3ac
-      internalID: -119879946
+      spriteID: 47dec7961e9d7f4439afb2b53eecbdc5
+      internalID: 1045489609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_cycle_doctor__9
+      name: left_9
       rect:
         serializedVersion: 2
         x: 64
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3acf2dcdb66e26b4cac33a37ce99d374
-      internalID: 2030525756
+      spriteID: d7e96f1f964defb42bc66b0ad2047aff
+      internalID: 755930487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_cycle_doctor__10
+      name: left_10
       rect:
         serializedVersion: 2
         x: 128
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c157b776f8fc5ab42ae785fbf8ad8fd6
-      internalID: 1992691310
+      spriteID: 95289e711d23a5c408867784c6231856
+      internalID: 1028402456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_cycle_doctor__11
+      name: left_11
       rect:
         serializedVersion: 2
         x: 192
@@ -355,8 +355,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa5208510dada3a4e9d7d3600bd6772b
-      internalID: -1489145612
+      spriteID: 62f1767a7badf6746853a61b0731e12d
+      internalID: 339040343
       vertices: []
       indices: 
       edges: []
@@ -372,18 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Run_cycle_doctor__0: 1327524794
-      Run_cycle_doctor__1: -168827200
-      Run_cycle_doctor__10: 1992691310
-      Run_cycle_doctor__11: -1489145612
-      Run_cycle_doctor__2: 11833139
-      Run_cycle_doctor__3: 561303243
-      Run_cycle_doctor__4: -532021828
-      Run_cycle_doctor__5: -1136884547
-      Run_cycle_doctor__6: 1367352642
-      Run_cycle_doctor__7: -1012307588
-      Run_cycle_doctor__8: -119879946
-      Run_cycle_doctor__9: 2030525756
+      left_0: 1017815455
+      left_1: -1757059480
+      left_10: 1028402456
+      left_11: 339040343
+      left_2: -939509135
+      left_3: 1369314603
+      left_4: -1245534299
+      left_5: 782234673
+      left_6: -965940994
+      left_7: 670772587
+      left_8: 1045489609
+      left_9: 755930487
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
