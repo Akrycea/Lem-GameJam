@@ -47,6 +47,11 @@ public class PlayerBehaviour : MonoBehaviour
         {
             canPickUp = true;
         }
+
+        if (other.tag == "Enemy" && script.maskOn == false)
+        {
+            Debug.Log("You died");
+        }
     }
 
     void OnTriggerExit2D (Collider2D other)
