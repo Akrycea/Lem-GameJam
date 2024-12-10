@@ -20988,11 +20988,12 @@ GameObject:
   - component: {fileID: 863882698}
   - component: {fileID: 863882697}
   - component: {fileID: 863882696}
+  - component: {fileID: 863882700}
   - component: {fileID: 863882695}
   - component: {fileID: 863882699}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21139,6 +21140,41 @@ MonoBehaviour:
   - {fileID: 1075262267}
   sightRange: 5
   playerInSightRange: 0
+--- !u!58 &863882700
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863882693}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0068136454}
+  serializedVersion: 2
+  m_Radius: 0.70440423
 --- !u!1 &1000630066
 GameObject:
   m_ObjectHideFlags: 0
