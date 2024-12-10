@@ -1043,7 +1043,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 8c54cfd1429bfae419f03352308f53f5, type: 3}
   - groupID: doktor
     clips:
-    - {fileID: 8300000, guid: aec20d350dbda084da5f702cc81eb258, type: 3}
+    - {fileID: 8300000, guid: 7f94cc4baea26a443937fb77c7d1f2bb, type: 3}
 --- !u!4 &612702359
 Transform:
   m_ObjectHideFlags: 0
@@ -1560,7 +1560,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.142
   m_Pitch: 1
   Loop: 1
   Mute: 0
