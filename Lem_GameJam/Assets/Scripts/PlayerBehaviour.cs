@@ -8,6 +8,7 @@ public class PlayerBehaviour : MonoBehaviour
 {
     [SerializeField] MaskSlider script;
     public GameObject maskSlider;
+    public GameObject redFilter;
     public TMP_Text maskUI;
     public GameObject key;
     public bool canPickUp = false;
@@ -17,6 +18,7 @@ public class PlayerBehaviour : MonoBehaviour
     void Start()
     {
         maskSlider.SetActive(false);
+        redFilter.SetActive(false);
         script.maskOn = false; 
     }
 
@@ -25,6 +27,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == false)
         {
             maskSlider.SetActive(true);
+            redFilter.SetActive(true);
             canTakeOff = true;
         }
 
@@ -71,6 +74,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         canTakeOff = false;
         maskSlider.SetActive(false);
+        redFilter.SetActive(false);
         maskUI.faceColor = new Color32(255, 255, 255, 75);
 
         yield return new WaitForSeconds(3);

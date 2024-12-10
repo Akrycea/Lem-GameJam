@@ -48,11 +48,13 @@ public class EnemyAI : MonoBehaviour
         }
 
         if (playerInSightRange && script.maskOn == false) ChasePlayer();
+
+        // if (player.transform.position > agent.transform.position || target.transform.position > agent.transform.position) agent.flipX = true;
+        // else agent.flipX = false;
     }
 
     void UpdateDestination()
     {
-        animator.SetBool("isWalking", true);
         target = waypoints[waypointIndex].position;
         agent.SetDestination(target);
     }
@@ -71,24 +73,5 @@ public class EnemyAI : MonoBehaviour
     {
         agent.SetDestination(player.position);
     }
-
-    // // Move the enemy towards the waypoint
-    // transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypointIndex].position, step);
-
-    // // Flip the enemy to face the direction of movement
-    // FlipEnemy(direction);
-
-
-    // void FlipEnemy(Vector3 direction)
-    // {
-    //     if (direction.magnitude > 0.01f) // If moving
-    //         {
-    //             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-    //             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90)); // Adjust the angle if needed
-    //         }
-    // }
-
-
 }
 
