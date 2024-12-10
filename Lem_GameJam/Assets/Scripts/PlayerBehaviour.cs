@@ -14,6 +14,7 @@ public class PlayerBehaviour : MonoBehaviour
     public bool canPickUp = false;
     public bool canTakeOff = false;
     public bool hasKey = false;
+    public bool canOpen = false;
 
     void Start()
     {
@@ -42,6 +43,11 @@ public class PlayerBehaviour : MonoBehaviour
             hasKey = true;
             Debug.Log("Key acquired");
         }
+
+        if (Input.GetKeyDown(KeyCode.E) && canOpen == true)
+        {
+            Debug.Log("You won");
+        }
     }
 
     void OnTriggerEnter2D (Collider2D other)
@@ -55,6 +61,11 @@ public class PlayerBehaviour : MonoBehaviour
         {
             Debug.Log("You died");
         }
+
+        if (other.tag == "Door" && hasKey == true)
+        {
+            canOpen = true;
+        }
     }
 
     void OnTriggerExit2D (Collider2D other)
@@ -62,6 +73,11 @@ public class PlayerBehaviour : MonoBehaviour
         if (other.tag == "Key")
         {
             canPickUp = false;
+        }
+
+        if (other.tag == "Door" && hasKey == false)
+        {
+            canOpen = false;
         }
     }
 
