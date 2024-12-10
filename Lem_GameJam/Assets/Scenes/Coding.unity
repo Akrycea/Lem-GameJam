@@ -24415,6 +24415,10 @@ PolygonCollider2D:
       - {x: 53.207172, y: -2.7028327}
       - {x: 53.13385, y: -10.744721}
       - {x: 63.71539, y: -10.738918}
+      - {x: 63.67451, y: -7.778754}
+      - {x: 67.6205, y: -7.7193003}
+      - {x: 67.61052, y: -3.2553337}
+      - {x: 63.79229, y: -3.2193284}
       - {x: 63.66029, y: 4.7932134}
       - {x: 62.706596, y: 4.8062997}
       - {x: 62.74019, y: 19.806454}
@@ -38349,6 +38353,7 @@ MonoBehaviour:
   sliderTimer: 7
   stopTimer: 0
   maskOn: 0
+  isDead: 0
 --- !u!1 &1688516448
 GameObject:
   m_ObjectHideFlags: 0
@@ -41176,7 +41181,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.359375, y: 1.109375}
+    oldSize: {x: 1.328125, y: 1.109375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -18,6 +18,7 @@ public class PlayerBehaviour : MonoBehaviour
     public bool hasKey = false;
     public bool canOpen = false;
     public bool isDead = false;
+    public bool canEscape = false;
 
     void Start()
     {
@@ -52,14 +53,16 @@ public class PlayerBehaviour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && canOpen == true)
         {
             youWon.SetActive(true);
-
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                Application.Quit();
-            }
+            canEscape = true;
+            Time.timeScale = 0f;
         }
 
         if (Input.GetKeyDown(KeyCode.Escape) && isDead == true)
+        {
+            Application.Quit();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && canEscape == true)
         {
             Application.Quit();
         }
@@ -74,6 +77,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (other.tag == "Enemy" && script.maskOn == false)
         {
+            Time.timeScale = 0f;
             youDied.SetActive(true);
             isDead = true;
         }

@@ -10,11 +10,20 @@ public class MaskSlider : MonoBehaviour
     public float sliderTimer;
     public bool stopTimer = false;
     public bool maskOn = false;
+    public bool isDead = false;
 
     void Start()
     {
         timeSlider = GetComponent<Slider>();
         youDied.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && isDead == true)
+        {
+            Application.Quit();
+        }
     }
 
     void OnEnable()
@@ -45,11 +54,9 @@ public class MaskSlider : MonoBehaviour
                 stopTimer = true;
 
                 youDied.SetActive(true);
-
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    Application.Quit();
-                }
+                isDead = true;
+                
+                Time.timeScale = 0f;
             }
 
             if (stopTimer == false)
