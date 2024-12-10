@@ -21125,6 +21125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c474e268a6c4684b897b7559927ba6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  script: {fileID: 1681546508}
   player: {fileID: 803365884}
   Ground:
     serializedVersion: 2

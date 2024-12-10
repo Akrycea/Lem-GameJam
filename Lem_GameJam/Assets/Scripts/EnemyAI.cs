@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
+    [SerializeField] MaskSlider script;
+
     public Transform player;
     NavMeshAgent agent;
     public LayerMask Ground, Player;
@@ -32,10 +34,10 @@ public class EnemyAI : MonoBehaviour
         // Check for sight range
         playerInSightRange = Physics2D.OverlapCircle(transform.position, sightRange, Player);
 
-        if (!playerInSightRange) 
+        if (!playerInSightRange || script.maskOn == true) 
         {
             UpdateDestination();
-            
+
             if (Vector2.Distance(transform.position, target) < 1)
             {
                 IterateWaypointIndex();
@@ -43,7 +45,7 @@ public class EnemyAI : MonoBehaviour
             }
         }
 
-        if (playerInSightRange) ChasePlayer();
+        if (playerInSightRange && script.maskOn == false) ChasePlayer();
     }
 
     void UpdateDestination()
