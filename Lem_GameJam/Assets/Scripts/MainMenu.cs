@@ -9,13 +9,14 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
+        MusicManager.Instance.PlayMusic("Ambient");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true; 
     }
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("Cutscene");
     }
 
     public void QuitGame()

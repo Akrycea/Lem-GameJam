@@ -16560,6 +16560,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 22ddfda0fce59264899ee2418344c613, type: 3}
     - {fileID: 8300000, guid: c5e8ade2dcf49af4487522fcc2cc1d0b, type: 3}
     - {fileID: 8300000, guid: f416da21c27539d4f94d29c87f6229d3, type: 3}
+  - groupID: Mask
+    clips:
+    - {fileID: 8300000, guid: ba3839abb9563bd4f8cb545959eefbe8, type: 3}
+    - {fileID: 8300000, guid: 8c54cfd1429bfae419f03352308f53f5, type: 3}
 --- !u!4 &1132865189
 Transform:
   m_ObjectHideFlags: 0
