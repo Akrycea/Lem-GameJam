@@ -21695,7 +21695,7 @@ PrefabInstance:
       objectReference: {fileID: 1681546508}
     - target: {fileID: 3349318752758952310, guid: a7a61a7a9db8ed24a9ad0b7ce631741b, type: 3}
       propertyPath: sightRange
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3349318752758952310, guid: a7a61a7a9db8ed24a9ad0b7ce631741b, type: 3}
       propertyPath: waypoints.Array.size
@@ -22341,7 +22341,7 @@ PrefabInstance:
       objectReference: {fileID: 1681546508}
     - target: {fileID: 7002889574475179240, guid: d8d4ec0042524ea45852b0b042b24056, type: 3}
       propertyPath: sightRange
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7002889574475179240, guid: d8d4ec0042524ea45852b0b042b24056, type: 3}
       propertyPath: waypoints.Array.size
@@ -44634,7 +44634,7 @@ PrefabInstance:
       objectReference: {fileID: 1681546508}
     - target: {fileID: 7002889574475179240, guid: d8d4ec0042524ea45852b0b042b24056, type: 3}
       propertyPath: sightRange
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7002889574475179240, guid: d8d4ec0042524ea45852b0b042b24056, type: 3}
       propertyPath: waypoints.Array.size
@@ -44908,7 +44908,7 @@ PrefabInstance:
       objectReference: {fileID: 1681546508}
     - target: {fileID: 3349318752758952310, guid: a7a61a7a9db8ed24a9ad0b7ce631741b, type: 3}
       propertyPath: sightRange
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3349318752758952310, guid: a7a61a7a9db8ed24a9ad0b7ce631741b, type: 3}
       propertyPath: waypoints.Array.size
@@ -45097,7 +45097,7 @@ PrefabInstance:
       objectReference: {fileID: 1681546508}
     - target: {fileID: 5287781778967053257, guid: 688670623fc698641a95434f3ea24402, type: 3}
       propertyPath: sightRange
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5287781778967053257, guid: 688670623fc698641a95434f3ea24402, type: 3}
       propertyPath: waypoints.Array.size

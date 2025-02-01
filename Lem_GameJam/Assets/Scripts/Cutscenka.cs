@@ -14,7 +14,7 @@ public class Cutscenka : MonoBehaviour
 
     IEnumerator wait()
     {
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(12);
         SceneManager.LoadScene(2);
     }
 
