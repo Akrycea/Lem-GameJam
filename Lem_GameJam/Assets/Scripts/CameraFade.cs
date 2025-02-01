@@ -33,7 +33,9 @@ public class CameraFade : MonoBehaviour
 
     void Start()
     {
-        //if (startFadedOut) alpha = 1f; else alpha = 0f;
+        Time.timeScale = 1f;
+
+        // if (startFadedOut) alpha = 1f; else alpha = 0f;
 
         alpha = 1f;
         time = 0f;
