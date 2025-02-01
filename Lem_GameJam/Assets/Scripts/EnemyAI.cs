@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] MaskSlider script;
+    [SerializeField] PlayerBehaviour mask;
 
     Animator animator;
     public Transform player;
@@ -39,7 +39,7 @@ public class EnemyAI : MonoBehaviour
     {
         playerInSightRange = Physics2D.OverlapCircle(transform.position, sightRange, Player);
 
-        if (!playerInSightRange || script.maskOn == true) 
+        if (!playerInSightRange || mask.isMasked == true) 
         {
             UpdateDestination();
 
@@ -50,7 +50,7 @@ public class EnemyAI : MonoBehaviour
             }
         }
 
-        if (playerInSightRange && script.maskOn == false) 
+        if (playerInSightRange && mask.isMasked == false) 
         {
             ChasePlayer();
         }
@@ -94,7 +94,7 @@ public class EnemyAI : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && mask.isMasked == false)
         {
             animator.SetTrigger("Attack");
         }

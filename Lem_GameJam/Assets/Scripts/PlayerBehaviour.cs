@@ -18,8 +18,6 @@ public class PlayerBehaviour : MonoBehaviour
     public bool canTakeOff = false;
     public bool hasKey = false;
     public bool canOpen = false;
-    public bool isDead = false;
-    public bool canEscape = false;
     public Animator animator;
     public bool isMasked = false;
 
@@ -61,18 +59,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && canOpen == true)
         {
             youWon.SetActive(true);
-            canEscape = true;
             Time.timeScale = 0f;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape) && isDead == true)
-        {
-            Application.Quit();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape) && canEscape == true)
-        {
-            Application.Quit();
         }
 
         if (canPickUp == true || canOpen == true)
@@ -97,7 +84,6 @@ public class PlayerBehaviour : MonoBehaviour
         {
             Time.timeScale = 0f;
             youDied.SetActive(true);
-            isDead = true;
         }
 
         if (other.tag == "Door" && hasKey == true)
