@@ -113,12 +113,12 @@ TextureImporter:
       name: baby3attack-sheet_20
       rect:
         serializedVersion: 2
-        x: 3846
+        x: 4000
         y: 0
-        width: 197
+        width: 200
         height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,36 +131,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: as
-      rect:
-        serializedVersion: 2
-        x: 4060
-        y: 184
-        width: 47
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d98c45cedbd2d0d4ba535f5aa0547ea5
-      internalID: -1028796839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: baby3attack-sheet_19
       rect:
         serializedVersion: 2
-        x: 3623
+        x: 3800
         y: 0
-        width: 220
-        height: 169
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,162 +152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aa
-      rect:
-        serializedVersion: 2
-        x: 4124
-        y: 162
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 043d350fd52866e438433965defc399f
-      internalID: 417399519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zzzzz
-      rect:
-        serializedVersion: 2
-        x: 4066
-        y: 146
-        width: 28
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fbf0d213061e9ee42b6e7fa169010a88
-      internalID: 1206913879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: adssd
-      rect:
-        serializedVersion: 2
-        x: 4019
-        y: 78
-        width: 24
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2aa1e19b74aa2c4999b3cc73996a7ff
-      internalID: 833187593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zzz
-      rect:
-        serializedVersion: 2
-        x: 4090
-        y: 123
-        width: 20
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06764f9c828f2394da727826a22ce701
-      internalID: -40272277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zz
-      rect:
-        serializedVersion: 2
-        x: 4107
-        y: 129
-        width: 15
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66268180577b2364390bb4cd97533733
-      internalID: -1570657179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: qdwd
-      rect:
-        serializedVersion: 2
-        x: 4151
-        y: 121
-        width: 5
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 875f1734ff4410341ba66d160a47a179
-      internalID: -654956126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: z
-      rect:
-        serializedVersion: 2
-        x: 4175
-        y: 103
-        width: 11
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c9ba33b9f34da049a4d89d07a06bbfc
-      internalID: 1052293392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: baby3attack-sheet_18
       rect:
         serializedVersion: 2
-        x: 3445
+        x: 3600
         y: 0
-        width: 118
-        height: 114
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,57 +173,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: aasdss
-      rect:
-        serializedVersion: 2
-        x: 3846
-        y: 71
-        width: 23
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49f864772463e604ba4cc173bbb20f70
-      internalID: 81097562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: a
-      rect:
-        serializedVersion: 2
-        x: 4052
-        y: 88
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9226936c8f1197489f6ef0a212f12a7
-      internalID: -1531590543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: baby3attack-sheet_1
       rect:
         serializedVersion: 2
-        x: 70
+        x: 200
         y: 0
-        width: 60
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -407,12 +197,12 @@ TextureImporter:
       name: baby3attack-sheet_2
       rect:
         serializedVersion: 2
-        x: 270
+        x: 400
         y: 0
-        width: 60
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -428,12 +218,12 @@ TextureImporter:
       name: baby3attack-sheet_3
       rect:
         serializedVersion: 2
-        x: 469
+        x: 600
         y: 0
-        width: 61
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -449,12 +239,12 @@ TextureImporter:
       name: baby3attack-sheet_4
       rect:
         serializedVersion: 2
-        x: 669
+        x: 800
         y: 0
-        width: 61
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -470,12 +260,12 @@ TextureImporter:
       name: baby3attack-sheet_5
       rect:
         serializedVersion: 2
-        x: 869
+        x: 1000
         y: 0
-        width: 61
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -491,12 +281,12 @@ TextureImporter:
       name: baby3attack-sheet_6
       rect:
         serializedVersion: 2
-        x: 1069
+        x: 1200
         y: 0
-        width: 61
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -512,12 +302,12 @@ TextureImporter:
       name: baby3attack-sheet_7
       rect:
         serializedVersion: 2
-        x: 1264
+        x: 1400
         y: 0
-        width: 70
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -533,12 +323,12 @@ TextureImporter:
       name: baby3attack-sheet_8
       rect:
         serializedVersion: 2
-        x: 1463
+        x: 1600
         y: 0
-        width: 75
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -554,12 +344,12 @@ TextureImporter:
       name: baby3attack-sheet_9
       rect:
         serializedVersion: 2
-        x: 1670
+        x: 1800
         y: 0
-        width: 59
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -575,12 +365,12 @@ TextureImporter:
       name: baby3attack-sheet_10
       rect:
         serializedVersion: 2
-        x: 1870
+        x: 2000
         y: 0
-        width: 59
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -596,12 +386,12 @@ TextureImporter:
       name: baby3attack-sheet_11
       rect:
         serializedVersion: 2
-        x: 2070
+        x: 2200
         y: 0
-        width: 59
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -617,12 +407,12 @@ TextureImporter:
       name: baby3attack-sheet_12
       rect:
         serializedVersion: 2
-        x: 2271
+        x: 2400
         y: 0
-        width: 59
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -638,12 +428,12 @@ TextureImporter:
       name: baby3attack-sheet_13
       rect:
         serializedVersion: 2
-        x: 2470
+        x: 2600
         y: 0
-        width: 59
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -659,12 +449,12 @@ TextureImporter:
       name: baby3attack-sheet_14
       rect:
         serializedVersion: 2
-        x: 2670
+        x: 2800
         y: 0
-        width: 59
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -680,12 +470,12 @@ TextureImporter:
       name: baby3attack-sheet_15
       rect:
         serializedVersion: 2
-        x: 2870
+        x: 3000
         y: 0
-        width: 59
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -701,12 +491,12 @@ TextureImporter:
       name: baby3attack-sheet_16
       rect:
         serializedVersion: 2
-        x: 3070
+        x: 3200
         y: 0
-        width: 59
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -722,12 +512,12 @@ TextureImporter:
       name: baby3attack-sheet_17
       rect:
         serializedVersion: 2
-        x: 3254
+        x: 3400
         y: 0
-        width: 86
-        height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -740,169 +530,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: baby3attack-sheet_21
+      name: baby3attack-sheet_0
       rect:
         serializedVersion: 2
-        x: 4052
+        x: 0
         y: 0
-        width: 136
+        width: 200
         height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f4414367b552bd418b4a45dcaa2316b
-      internalID: 1975785302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: baby3attack-sheet_31
-      rect:
-        serializedVersion: 2
-        x: 3333
-        y: 17
-        width: 4
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d9106107f6688643a6aeba8b795e606
-      internalID: -514569546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dweqa
-      rect:
-        serializedVersion: 2
-        x: 3633
-        y: 0
-        width: 70
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55dcaeaaffdc6134fb990b32e7b14163
-      internalID: 663841067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vwesfds
-      rect:
-        serializedVersion: 2
-        x: 3704
-        y: 12
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9abc5e5f5ebef2344b45a0cd4ddafdd3
-      internalID: -1936330912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fswfe
-      rect:
-        serializedVersion: 2
-        x: 3742
-        y: 11
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bff9931ca049c2342bb8a8bdaa290189
-      internalID: -312508787
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dassda
-      rect:
-        serializedVersion: 2
-        x: 3928
-        y: 17
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b01f7026bfa62b74aa7f6271338ce50e
-      internalID: -218993595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: adsasd
-      rect:
-        serializedVersion: 2
-        x: 3933
-        y: 17
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c783417285371640a4647b36ad47e3b
-      internalID: -1363280259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vwsdfc
-      rect:
-        serializedVersion: 2
-        x: 3721
-        y: 0
-        width: 59
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7566ef76ef9daa6449491deab14b0729
-      internalID: 436966618
+      spriteID: 3ed3c166cac1c4e4bbaef10084288ed6
+      internalID: -1079892020
       vertices: []
       indices: 
       edges: []
@@ -918,12 +561,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      a: -1531590543
-      aa: 417399519
-      aasdss: 81097562
-      adsasd: -1363280259
-      adssd: 833187593
-      as: -1028796839
+      baby3attack-sheet_0: -1079892020
       baby3attack-sheet_1: 1210523779
       baby3attack-sheet_10: -904517297
       baby3attack-sheet_11: -1156902490
@@ -937,25 +575,13 @@ TextureImporter:
       baby3attack-sheet_19: -1707727630
       baby3attack-sheet_2: -536863071
       baby3attack-sheet_20: -1099172333
-      baby3attack-sheet_21: 1975785302
       baby3attack-sheet_3: -1287010428
-      baby3attack-sheet_31: -514569546
       baby3attack-sheet_4: -9406543
       baby3attack-sheet_5: -1587397223
       baby3attack-sheet_6: 127666728
       baby3attack-sheet_7: 455934007
       baby3attack-sheet_8: -86890545
       baby3attack-sheet_9: 158488841
-      dassda: -218993595
-      dweqa: 663841067
-      fswfe: -312508787
-      qdwd: -654956126
-      vwesfds: -1936330912
-      vwsdfc: 436966618
-      z: 1052293392
-      zz: -1570657179
-      zzz: -40272277
-      zzzzz: 1206913879
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

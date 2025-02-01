@@ -44040,6 +44040,14 @@ PrefabInstance:
       value: Enemy3
       objectReference: {fileID: 0}
     - target: {fileID: 2522132591711268787, guid: a7a61a7a9db8ed24a9ad0b7ce631741b, type: 3}
+      propertyPath: m_Size.x
+      value: 3.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522132591711268787, guid: a7a61a7a9db8ed24a9ad0b7ce631741b, type: 3}
+      propertyPath: m_Size.y
+      value: 3.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522132591711268787, guid: a7a61a7a9db8ed24a9ad0b7ce631741b, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 42c481575d4a34e419e5fc35efd4c525, type: 3}
