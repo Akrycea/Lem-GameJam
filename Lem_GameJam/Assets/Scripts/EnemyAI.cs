@@ -13,13 +13,15 @@ public class EnemyAI : MonoBehaviour
     public LayerMask Ground, Player;
 
     // Patrolling
-    public Transform[] waypoints; // Array to hold the waypoints
+    public Transform[] waypoints; 
     int waypointIndex;
     Vector2 target;
 
     // States
     public float sightRange;
     public bool playerInSightRange;
+
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
@@ -28,12 +30,13 @@ public class EnemyAI : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
         UpdateDestination();
     }
 
     void Update()
     {
-        // Check for sight range
         playerInSightRange = Physics2D.OverlapCircle(transform.position, sightRange, Player);
 
         if (!playerInSightRange || script.maskOn == true) 
@@ -47,10 +50,12 @@ public class EnemyAI : MonoBehaviour
             }
         }
 
-        if (playerInSightRange && script.maskOn == false) ChasePlayer();
+        if (playerInSightRange && script.maskOn == false) 
+        {
+            ChasePlayer();
+        }
 
-        // if (player.transform.position > agent.transform.position || target.transform.position > agent.transform.position) agent.flipX = true;
-        // else agent.flipX = false;
+        FlipSprite();
     }
 
     void UpdateDestination()
@@ -73,5 +78,19 @@ public class EnemyAI : MonoBehaviour
     {
         agent.SetDestination(player.position);
     }
+
+    void FlipSprite()
+    {
+        if (agent.velocity.x < 0 && spriteRenderer.flipX) 
+        {
+            spriteRenderer.flipX = false;
+        }
+        
+        else if (agent.velocity.x > 0 && !spriteRenderer.flipX) 
+        {
+            spriteRenderer.flipX = true;
+        }
+    }
 }
+
 
