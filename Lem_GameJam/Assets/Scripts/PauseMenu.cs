@@ -41,7 +41,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
         canPause = false;
 
-        // music.volume = 0.05f;
+        // MusicManager.Instance.volume = 0.05f;
     }
 
     public void ResumeGame()
@@ -51,7 +51,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
         canPause = true;
 
-        // music.volume = 0.1f;
+       // MusicManager.Instance.volume = 0.1f;
     }
 
     public void ExitGame()
