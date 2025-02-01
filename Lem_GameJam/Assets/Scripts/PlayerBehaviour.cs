@@ -20,6 +20,8 @@ public class PlayerBehaviour : MonoBehaviour
     public bool canOpen = false;
     public bool isDead = false;
     public bool canEscape = false;
+    public Animator animator;
+    public bool isMasked = false;
 
     void Start()
     {
@@ -33,15 +35,19 @@ public class PlayerBehaviour : MonoBehaviour
 
     void Update()
     {
+        animator.SetBool("Masked", isMasked);
+
         if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == false)
         {
             maskSlider.SetActive(true);
             redFilter.SetActive(true);
             canTakeOff = true;
+            isMasked = true;
         }
 
         else if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == true && canTakeOff == true)
         {
+            isMasked = false;
             StartTimer();
         }
 
