@@ -91,6 +91,14 @@ public class EnemyAI : MonoBehaviour
             spriteRenderer.flipX = true;
         }
     }
+
+    void OnTriggerEnter2D (Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            animator.SetTrigger("Attack");
+        }
+    }
 }
 
 
