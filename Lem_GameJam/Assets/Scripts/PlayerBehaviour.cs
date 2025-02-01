@@ -80,7 +80,7 @@ public class PlayerBehaviour : MonoBehaviour
             canPickUp = true;
         }
 
-        if (other.tag == "Enemy" && script.maskOn == false)
+        if (other.tag == "Enemy" && isMasked == false)
         {
             Time.timeScale = 0f;
             youDied.SetActive(true);
