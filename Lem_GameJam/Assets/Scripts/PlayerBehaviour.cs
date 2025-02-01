@@ -7,6 +7,7 @@ using TMPro;
 public class PlayerBehaviour : MonoBehaviour
 {
     [SerializeField] MaskSlider script;
+    public GameObject icon;
     public GameObject maskSlider;
     public GameObject redFilter;
     public GameObject youDied;
@@ -22,6 +23,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     void Start()
     {
+        icon.SetActive(false);
         maskSlider.SetActive(false);
         redFilter.SetActive(false);
         youDied.SetActive(false);
@@ -65,6 +67,21 @@ public class PlayerBehaviour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape) && canEscape == true)
         {
             Application.Quit();
+        }
+
+        if (canPickUp == true)
+        {
+            icon.SetActive(true);
+        }
+
+        else if (canOpen == true)
+        {
+            icon.SetActive(true);
+        }
+
+        else
+        {
+            icon.SetActive(false);
         }
     }
 
@@ -111,7 +128,7 @@ public class PlayerBehaviour : MonoBehaviour
         canTakeOff = false;
         maskSlider.SetActive(false);
         redFilter.SetActive(false);
-        maskUI.faceColor = new Color32(255, 255, 255, 75);
+        maskUI.faceColor = new Color32(255, 255, 255, 25);
 
         yield return new WaitForSeconds(3);
 
