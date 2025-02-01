@@ -113,10 +113,10 @@ TextureImporter:
       name: baby4walkanim-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 100
-        height: 100
+        x: 15
+        y: 7
+        width: 72
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: baby4walkanim-Sheet_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 0
-        width: 100
-        height: 100
+        x: 115
+        y: 7
+        width: 72
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: baby4walkanim-Sheet_2
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 100
-        height: 100
+        x: 211
+        y: 7
+        width: 76
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: baby4walkanim-Sheet_3
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 100
-        height: 100
+        x: 315
+        y: 7
+        width: 72
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: baby4walkanim-Sheet_4
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0
-        width: 100
-        height: 100
+        x: 415
+        y: 7
+        width: 72
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: baby4walkanim-Sheet_5
       rect:
         serializedVersion: 2
-        x: 500
-        y: 0
-        width: 100
-        height: 100
+        x: 515
+        y: 7
+        width: 71
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: baby4walkanim-Sheet_6
       rect:
         serializedVersion: 2
-        x: 600
-        y: 0
-        width: 100
-        height: 100
+        x: 615
+        y: 7
+        width: 69
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: baby4walkanim-Sheet_7
       rect:
         serializedVersion: 2
-        x: 700
-        y: 0
-        width: 100
-        height: 100
+        x: 714
+        y: 7
+        width: 71
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: baby4walkanim-Sheet_8
       rect:
         serializedVersion: 2
-        x: 800
-        y: 0
-        width: 100
-        height: 100
+        x: 812
+        y: 7
+        width: 75
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: baby4walkanim-Sheet_9
       rect:
         serializedVersion: 2
-        x: 900
-        y: 0
-        width: 100
-        height: 100
+        x: 915
+        y: 7
+        width: 72
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: baby4walkanim-Sheet_10
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 100
-        height: 100
+        x: 1015
+        y: 7
+        width: 71
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: baby4walkanim-Sheet_11
       rect:
         serializedVersion: 2
-        x: 1100
-        y: 0
-        width: 100
-        height: 100
+        x: 1115
+        y: 7
+        width: 71
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

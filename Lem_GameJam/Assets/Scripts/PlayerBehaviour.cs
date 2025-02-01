@@ -69,12 +69,7 @@ public class PlayerBehaviour : MonoBehaviour
             Application.Quit();
         }
 
-        if (canPickUp == true)
-        {
-            icon.SetActive(true);
-        }
-
-        else if (canOpen == true)
+        if (canPickUp == true || canOpen == true)
         {
             icon.SetActive(true);
         }
