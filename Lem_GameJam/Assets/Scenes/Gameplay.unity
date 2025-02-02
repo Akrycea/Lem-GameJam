@@ -21286,7 +21286,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &41023016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29608,7 +29608,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &1326512102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43361,7 +43361,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4629c15bdb09018459330e803b7eeaa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  script: {fileID: 1681546508}
   pauseMenu: {fileID: 427068452}
+  resumeButton: {fileID: 1326512101}
   isPaused: 0
   canPause: 0
   sceneName: Main Menu
@@ -46268,6 +46270,10 @@ PrefabInstance:
       propertyPath: icon
       value: 
       objectReference: {fileID: 831644862}
+    - target: {fileID: 3998308305208154954, guid: f8e46d59f747f4f4ca14393721efad26, type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 1779676851}
     - target: {fileID: 3998308305208154954, guid: f8e46d59f747f4f4ca14393721efad26, type: 3}
       propertyPath: maskOn
       value: 

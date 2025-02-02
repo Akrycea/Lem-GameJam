@@ -7,6 +7,8 @@ using TMPro;
 public class PlayerBehaviour : MonoBehaviour
 {
     [SerializeField] MaskSlider script;
+    [SerializeField] PauseMenu pause;
+
     public GameObject icon;
     public GameObject maskSlider;
     public GameObject redFilter;
@@ -46,6 +48,11 @@ public class PlayerBehaviour : MonoBehaviour
         animator.SetBool("Masked", isMasked);
         animator.SetBool("Death", exploded);
 
+        if (pause.isPaused || script.isDead)
+        {
+            return;  
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == false && script.isDead == false)
         {
             maskOn.Play();
@@ -62,7 +69,7 @@ public class PlayerBehaviour : MonoBehaviour
             StartTimer();
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && canPickUp == true && script.isDead == false)
+        if (Input.GetKeyDown(KeyCode.E) && canPickUp == true && script.isDead == false && pause.isPaused == false)
         {
             keySound.Play();
             key.SetActive(false);
@@ -70,7 +77,7 @@ public class PlayerBehaviour : MonoBehaviour
             Debug.Log("Key acquired");
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && canOpen == true && script.isDead == false)
+        if (Input.GetKeyDown(KeyCode.E) && canOpen == true && script.isDead == false && pause.isPaused == false)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -107,13 +114,14 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (other.tag == "Enemy" && isMasked == false)
         {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-            
             // robotDeath.Play();
             Time.timeScale = 0f;
             hasDied = true;
             youDied.SetActive(true);
+            pause.canPause = false;
+
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
 
         if (other.tag == "Door" && hasKey == true)

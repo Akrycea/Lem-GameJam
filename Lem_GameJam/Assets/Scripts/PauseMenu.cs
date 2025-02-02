@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField] MaskSlider script;
+
     [SerializeField] GameObject pauseMenu;
+    public Button resumeButton;
    
-    // [SerializeField] AudioSource music;
     public bool isPaused;
     public bool canPause;
     public string sceneName;
@@ -26,14 +29,14 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && isPaused == false && canPause == true)
+        if (isPaused)
         {
-            PauseGame();
+            return; 
         }
 
-        else if (Input.GetKeyDown(KeyCode.Escape) && isPaused == true)
+        if (Input.GetKeyDown(KeyCode.Escape) && isPaused == false && canPause == true && script.isDead == false)
         {
-            ResumeGame();
+            PauseGame();
         }
     }
 
@@ -47,7 +50,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
         canPause = false;
 
-        // MusicManager.Instance.volume = 0.05f;
+        resumeButton.interactable = true;
     }
 
     public void ResumeGame()
@@ -60,7 +63,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
         canPause = true;
 
-       // MusicManager.Instance.volume = 0.1f;
+        resumeButton.interactable = false;
     }
 
     public void ExitGame()
