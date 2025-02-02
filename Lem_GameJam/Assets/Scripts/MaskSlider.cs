@@ -12,6 +12,8 @@ public class MaskSlider : MonoBehaviour
     public bool maskOn = false;
     public bool isDead = false;
 
+    public AudioSource maskDeath;
+
     void Start()
     {
         timeSlider = GetComponent<Slider>();
@@ -55,6 +57,8 @@ public class MaskSlider : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
 
                 stopTimer = true;
+
+                maskDeath.Play();
 
                 youDied.SetActive(true);
                 isDead = true;

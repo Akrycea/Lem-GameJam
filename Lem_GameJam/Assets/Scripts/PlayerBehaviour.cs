@@ -26,7 +26,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     public AudioSource maskOn;
     public AudioSource maskOff;
-    public AudioSource maskDeath;
+    public AudioSource robotDeath;
     public AudioSource keySound;
     public AudioSource keyDoor;
     public AudioSource door;
@@ -94,7 +94,6 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (script.isDead == true)
         {
-            maskDeath.Play();
             exploded = true;
         }
     }
@@ -111,7 +110,7 @@ public class PlayerBehaviour : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             
-            maskDeath.Play();
+            // robotDeath.Play();
             Time.timeScale = 0f;
             hasDied = true;
             youDied.SetActive(true);
