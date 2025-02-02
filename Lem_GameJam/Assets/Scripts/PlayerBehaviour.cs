@@ -22,6 +22,7 @@ public class PlayerBehaviour : MonoBehaviour
     public bool hasDied = false;
     public Animator animator;
     public bool isMasked = false;
+    public bool exploded = false;
 
     public AudioSource maskOn;
     public AudioSource maskOff;
@@ -43,8 +44,9 @@ public class PlayerBehaviour : MonoBehaviour
     void Update()
     {
         animator.SetBool("Masked", isMasked);
+        animator.SetBool("Death", exploded);
 
-        if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == false)
+        if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == false && script.isDead == false)
         {
             maskOn.Play();
             maskSlider.SetActive(true);
@@ -53,14 +55,14 @@ public class PlayerBehaviour : MonoBehaviour
             isMasked = true;
         }
 
-        else if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == true && canTakeOff == true)
+        else if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == true && canTakeOff == true && script.isDead == false)
         {
             maskOff.Play();
             isMasked = false;
             StartTimer();
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && canPickUp == true)
+        if (Input.GetKeyDown(KeyCode.E) && canPickUp == true && script.isDead == false)
         {
             keySound.Play();
             key.SetActive(false);
@@ -68,7 +70,7 @@ public class PlayerBehaviour : MonoBehaviour
             Debug.Log("Key acquired");
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && canOpen == true)
+        if (Input.GetKeyDown(KeyCode.E) && canOpen == true && script.isDead == false)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -88,6 +90,12 @@ public class PlayerBehaviour : MonoBehaviour
         else
         {
             icon.SetActive(false);
+        }
+
+        if (script.isDead == true)
+        {
+            maskDeath.Play();
+            exploded = true;
         }
     }
 

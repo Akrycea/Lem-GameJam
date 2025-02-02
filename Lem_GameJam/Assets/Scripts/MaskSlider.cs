@@ -51,6 +51,9 @@ public class MaskSlider : MonoBehaviour
 
             if (sliderTimer <= 0)
             {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+
                 stopTimer = true;
 
                 youDied.SetActive(true);
