@@ -86,6 +86,7 @@ public class PlayerBehaviour : MonoBehaviour
             keyDoor.Play();
             door.Play();
             hasWon = true;
+            pause.canPause = false;
             alarm.SetActive(false);
             youWon.SetActive(true);
             Time.timeScale = 0f;
@@ -118,9 +119,13 @@ public class PlayerBehaviour : MonoBehaviour
         {
             // robotDeath.Play();
             Time.timeScale = 0f;
+            
             hasDied = true;
-            youDied.SetActive(true);
+            exploded = true;
             pause.canPause = false;
+            script.isDead = true;
+
+            youDied.SetActive(true);
 
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
