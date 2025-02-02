@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField] PlayerBehaviour mask;
+    [SerializeField] MaskSlider script;
 
     Animator animator;
     public Transform player;
@@ -62,7 +63,7 @@ public class EnemyAI : MonoBehaviour
 
         FlipSprite();
 
-        if (mask.hasWon == true || mask.hasDied == true)
+        if (mask.hasWon == true || mask.hasDied == true || script.isDead == true)
         {
             walk.Stop();
         }
