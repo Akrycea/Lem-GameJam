@@ -23,8 +23,13 @@ public class EnemyAI : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
+    public AudioSource walk;
+    public AudioSource attack;
+
     void Start()
     {
+        walk.Play();
+
         animator = gameObject.GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
@@ -56,6 +61,11 @@ public class EnemyAI : MonoBehaviour
         }
 
         FlipSprite();
+
+        if (mask.hasWon == true || mask.hasDied == true)
+        {
+            walk.Stop();
+        }
     }
 
     void UpdateDestination()
@@ -96,6 +106,8 @@ public class EnemyAI : MonoBehaviour
     {
         if (other.tag == "Player" && mask.isMasked == false)
         {
+            walk.Stop();
+            attack.Play();
             animator.SetTrigger("Attack");
         }
     }

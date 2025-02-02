@@ -18,8 +18,17 @@ public class PlayerBehaviour : MonoBehaviour
     public bool canTakeOff = false;
     public bool hasKey = false;
     public bool canOpen = false;
+    public bool hasWon = false;
+    public bool hasDied = false;
     public Animator animator;
     public bool isMasked = false;
+
+    public AudioSource maskOn;
+    public AudioSource maskOff;
+    public AudioSource maskDeath;
+    public AudioSource keySound;
+    public AudioSource keyDoor;
+    public AudioSource door;
 
     void Start()
     {
@@ -37,6 +46,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == false)
         {
+            maskOn.Play();
             maskSlider.SetActive(true);
             redFilter.SetActive(true);
             canTakeOff = true;
@@ -45,12 +55,14 @@ public class PlayerBehaviour : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.Space) && script.maskOn == true && canTakeOff == true)
         {
+            maskOff.Play();
             isMasked = false;
             StartTimer();
         }
 
         if (Input.GetKeyDown(KeyCode.E) && canPickUp == true)
         {
+            keySound.Play();
             key.SetActive(false);
             hasKey = true;
             Debug.Log("Key acquired");
@@ -58,6 +70,9 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && canOpen == true)
         {
+            keyDoor.Play();
+            door.Play();
+            hasWon = true;
             youWon.SetActive(true);
             Time.timeScale = 0f;
         }
@@ -82,7 +97,9 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (other.tag == "Enemy" && isMasked == false)
         {
+            maskDeath.Play();
             Time.timeScale = 0f;
+            hasDied = true;
             youDied.SetActive(true);
         }
 

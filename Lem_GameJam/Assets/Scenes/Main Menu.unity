@@ -1095,7 +1095,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 8c54cfd1429bfae419f03352308f53f5, type: 3}
   - groupID: doktor
     clips:
-    - {fileID: 8300000, guid: 7f94cc4baea26a443937fb77c7d1f2bb, type: 3}
+    - {fileID: 8300000, guid: 88e612dcfe4503d4fb291f372481b103, type: 3}
 --- !u!4 &612702359
 Transform:
   m_ObjectHideFlags: 0
