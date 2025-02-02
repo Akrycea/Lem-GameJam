@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MaskSlider : MonoBehaviour
 {
     [SerializeField] PauseMenu pause;
+    [SerializeField] PlayerBehaviour player;
 
     public GameObject youDied;
     public Slider timeSlider;
@@ -65,6 +66,7 @@ public class MaskSlider : MonoBehaviour
                 youDied.SetActive(true);
                 isDead = true;
                 pause.canPause = false;
+                player.exploded = true;
                 
                 Time.timeScale = 0f;
             }

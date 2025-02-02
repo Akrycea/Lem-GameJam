@@ -42839,6 +42839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 1779676851}
+  player: {fileID: 803365888}
   youDied: {fileID: 621409641}
   timeSlider: {fileID: 1681546507}
   sliderTimer: 7
