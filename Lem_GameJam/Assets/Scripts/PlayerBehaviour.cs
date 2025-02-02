@@ -10,6 +10,7 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] PauseMenu pause;
 
     public GameObject icon;
+    public GameObject alarm;
     public GameObject maskSlider;
     public GameObject redFilter;
     public GameObject youDied;
@@ -85,6 +86,7 @@ public class PlayerBehaviour : MonoBehaviour
             keyDoor.Play();
             door.Play();
             hasWon = true;
+            alarm.SetActive(false);
             youWon.SetActive(true);
             Time.timeScale = 0f;
         }
