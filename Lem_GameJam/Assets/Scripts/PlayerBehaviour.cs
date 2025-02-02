@@ -70,6 +70,9 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && canOpen == true)
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
             keyDoor.Play();
             door.Play();
             hasWon = true;
@@ -97,6 +100,9 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (other.tag == "Enemy" && isMasked == false)
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            
             maskDeath.Play();
             Time.timeScale = 0f;
             hasDied = true;

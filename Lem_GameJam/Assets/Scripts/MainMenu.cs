@@ -12,6 +12,9 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        
         Time.timeScale = 1f;
         
         MusicManager.Instance.PlayMusic("Ambient");

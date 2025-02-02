@@ -6,10 +6,15 @@ using UnityEngine.SceneManagement;
 public class Cutscenka : MonoBehaviour
 {
 
+    void Start()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     private void Update()
     {
         StartCoroutine(wait());
-        
     }
 
     IEnumerator wait()
